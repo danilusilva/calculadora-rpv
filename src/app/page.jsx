@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -14,7 +14,9 @@ export default function Home() {
             matemáticas integrando frontend moderno com backend externo,
             utilizando as melhores práticas do ecossstima React/Next.js.
           </p>
-          <Button className="cursor-pointer">Ir para a calculadora</Button>
+          <Button className="cursor-pointer">
+            <Link href="/calculadora">Ir para a calculadora</Link>
+          </Button>
         </div>
       </div>
     </>
